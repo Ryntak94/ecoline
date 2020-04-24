@@ -6,8 +6,8 @@ import image from './img/img1.jpg'
 const Img = styled.img`
     border: solid 1px black;
     border-radius: 20px;
-
-    
+    width: 962px;
+    height: 962px;
 `
 
 const AppDiv = styled.div`
