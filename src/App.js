@@ -1,25 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components'
+import image from './img/img1.jpg'
+const Img = styled.img`
+    border: solid 1px black;
+    border-radius: 20px;
+`
+
+const AppDiv = styled.div`
+    background: #5C32A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <AppDiv>
+
+        <Img src={image} />
+    </AppDiv>
   );
 }
 
